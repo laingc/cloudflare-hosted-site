@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#1a1a1a"/>
+
+  <!-- Geometric pattern inspired by Palantir aesthetic -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="100" cy="100" r="45" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+  <circle cx="100" cy="100" r="30" fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.6"/>
+
+  <!-- User silhouette -->
+  <circle cx="100" cy="85" r="18" fill="#e5e5e5"/>
+  <path d="M 70 145 Q 70 115, 100 115 Q 130 115, 130 145 L 130 160 L 70 160 Z" fill="#e5e5e5"/>
+
+  <!-- Accent lines -->
+  <line x1="100" y1="20" x2="100" y2="35" stroke="#00d9ff" stroke-width="1" opacity="0.4"/>
+  <line x1="100" y1="165" x2="100" y2="180" stroke="#00d9ff" stroke-width="1" opacity="0.4"/>
+  <line x1="20" y1="100" x2="35" y2="100" stroke="#00d9ff" stroke-width="1" opacity="0.4"/>
+  <line x1="165" y1="100" x2="180" y2="100" stroke="#00d9ff" stroke-width="1" opacity="0.4"/>
+</svg>

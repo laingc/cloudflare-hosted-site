@@ -1,0 +1,80 @@
+name: "Christopher Laing"
+title: "Technology & Innovation Executive"
+tagline: "Delivering intelligence, data, and AI systems that shape national capability."
+
+about: |
+  I lead teams at the intersection of technology, intelligence, and mission delivery. My focus is on building scalable systems that give governments, defence organisations, and industry the ability to see and act with precision.
+
+  I’ve worked across New Zealand and Europe in roles spanning AI, analytics, geospatial intelligence, and enterprise technology — from leading product and technology portfolios to shaping national data strategies.
+
+  I combine a background in applied mathematics and law with experience leading engineering, product, and research teams. My approach is pragmatic: design for clarity, build for resilience, and measure impact through outcomes, not outputs.
+
+experience:
+  - role: "Technology & Innovation Leadership"
+    period: "2024 – Present"
+    description: |
+      Defence-tech and intelligence domain. Driving technology strategy and product innovation for high-trust, high-impact systems spanning satellite integration, AI, and maritime domain awareness.
+
+  - role: "Chief Product & Technology Officer"
+    organisation: "Qrious"
+    period: "2022 – 2024"
+    description: |
+      Led New Zealand’s leading AI, data, and analytics business. Directed product, engineering, and data science teams delivering enterprise-scale data platforms and applied AI solutions for government and industry.
+
+  - role: "Head of AI"
+    organisation: "Xero"
+    period: "2018 – 2020"
+    description: |
+      Built and scaled Xero’s AI capability, leading teams developing the company’s AI systems and machine-learning platform. Drove adoption of ML across global product teams and core services.
+
+  - role: "Global Data Science Leadership"
+    organisation: "Allianz & Blue Yonder, Germany"
+    period: "2015 – 2017"
+    description: |
+      Held global roles advancing AI and data strategy across the Allianz Group. Designed predictive and decision-support systems deployed across international business units.
+
+  - role: "Earlier Work"
+    period: "2011 – 2015"
+    description: |
+      Mathematician turned data scientist — developing forecasting, optimisation, and statistical learning models across finance, logistics, and risk domains.
+
+  - role: "Academic & Advisory Roles"
+    period: "Ongoing"
+    description: |
+      Adjunct Senior Fellow, University of Canterbury (AI & Data Science).
+      Director, Ingenum — consultancy for advanced analytics and innovation strategy.
+      Former board and executive roles with NZTech and the AI Forum NZ.
+
+skills:
+  - Leadership & Strategy
+  - Technology Vision & Governance
+  - AI & Machine Learning Systems
+  - Data Fusion & Geospatial Intelligence
+  - Product Development & Delivery Discipline
+  - Distributed & Cloud Systems
+  - Secure Architecture & Risk Management
+  - Defence, Security & National Capability
+  - Applied Mathematics, Law, and Policy
+
+projects:
+  - title: "AI-Enabled Maritime Domain Awareness"
+    description: |
+      Developed multi-sensor data-fusion systems integrating satellite and terrestrial feeds for near-real-time operational awareness.
+
+  - title: "Operational Decision Support Systems"
+    description: |
+      Delivered AI-driven tasking and prioritisation tools improving mission efficiency and operational response.
+
+  - title: "AI Strategy & Capability Development"
+    description: |
+      Built and led national and enterprise AI programmes, from foundational data infrastructure to model governance and deployment.
+
+  - title: "Secure Data Collaboration Frameworks"
+    description: |
+      Architected inter-agency data-sharing solutions with auditable, least-privilege access models for sensitive environments.
+
+contact:
+  email: "christopher@starboard.nz"
+  linkedin: "https://www.linkedin.com/in/christopherlaing"
+  website: "https://chrislaing.net"
+  vcard: "/Christopher_Laing.vcf"

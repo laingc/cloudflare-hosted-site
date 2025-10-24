@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Optional: if you add a build process later
+node_modules/
+dist/
+.cache/
+
+# Claude settings (local only)
+.claude/
+
+# Profile data (optional - keep this commented out if you want to commit profile.yaml)
+# profile.yaml

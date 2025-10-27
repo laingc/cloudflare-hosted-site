@@ -168,18 +168,26 @@ ul {
    =========================== */
 .hero {
     min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height - iOS safe */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     padding: var(--space-3xl) 0;
     position: relative;
+}
+
+.hero-spacer {
+    flex: 1;
+    min-height: 0;
 }
 
 .hero-content {
     opacity: 0;
     animation: fadeInUp var(--transition-slow) forwards;
     animation-delay: 200ms;
+    flex-shrink: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -253,22 +261,19 @@ ul {
 }
 
 .scroll-down {
-    position: absolute;
-    bottom: var(--space-xl);
-    left: 50%;
-    transform: translateX(-50%);
     background: none;
     border: none;
     cursor: pointer;
-    padding: var(--space-sm);
+    padding: var(--space-lg);
     opacity: 0.5;
     transition: opacity var(--transition-fast), transform var(--transition-fast);
-    z-index: 10;
+    flex-shrink: 0;
+    align-self: center;
 }
 
 .scroll-down:hover {
     opacity: 1;
-    transform: translateX(-50%) translateY(4px);
+    transform: translateY(4px);
 }
 
 .scroll-down:focus-visible {
@@ -592,12 +597,12 @@ ul {
         display: none;
     }
 
-    .hero-content {
-        margin-bottom: var(--space-3xl);
+    .hero-spacer {
+        flex: 0.3 !important;
     }
 
-    .scroll-down {
-        bottom: var(--space-md);
+    .hero {
+        padding: var(--space-lg) 0 !important;
     }
 }
 

@@ -65,6 +65,7 @@
 
         if (!scrollDownBtn) return;
 
+        // Click handler
         scrollDownBtn.addEventListener('click', function() {
             // Find the first section after the hero
             const firstSection = document.querySelector('.section');

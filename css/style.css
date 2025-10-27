@@ -40,9 +40,9 @@
     --font-size-4xl: 3rem;
 
     --font-weight-normal: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
+    --font-weight-medium: 400;
+    --font-weight-semibold: 400;
+    --font-weight-bold: 400;
 
     --line-height-tight: 1.2;
     --line-height-normal: 1.5;
@@ -167,9 +167,9 @@ ul {
 .hero {
     min-height: 100vh;
     display: flex;
-    align-items: centre;
-    justify-content: centre;
-    text-align: centre;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: var(--space-3xl) 0;
 }
 
@@ -456,7 +456,7 @@ ul {
 
 .contact-link {
     display: flex;
-    align-items: centre;
+    align-items: center;
     gap: var(--space-md);
     font-size: var(--font-size-lg);
     color: var(--colour-text-secondary);
@@ -485,7 +485,7 @@ ul {
     margin-top: var(--space-3xl);
     padding: var(--space-xl) 0;
     border-top: 1px solid var(--colour-border);
-    text-align: centre;
+    text-align: center;
 }
 
 .footer p {

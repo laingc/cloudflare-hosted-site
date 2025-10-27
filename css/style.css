@@ -171,6 +171,7 @@ ul {
     justify-content: center;
     text-align: center;
     padding: var(--space-3xl) 0;
+    position: relative;
 }
 
 .hero-content {
@@ -249,16 +250,66 @@ ul {
     opacity: 0.5;
 }
 
+.scroll-down {
+    position: absolute;
+    bottom: var(--space-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-sm);
+    opacity: 0.5;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+    z-index: 10;
+}
+
+.scroll-down:hover {
+    opacity: 1;
+    transform: translateX(-50%) translateY(4px);
+}
+
+.scroll-down:focus-visible {
+    outline: 2px solid var(--colour-accent);
+    outline-offset: 4px;
+    opacity: 1;
+}
+
+.arrow-icon {
+    display: block;
+    font-size: var(--font-size-2xl);
+    color: var(--colour-text-tertiary);
+    line-height: 1;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    60% {
+        transform: translateY(-4px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .arrow-icon {
+        animation: none;
+    }
+
+    .scroll-down:hover {
+        transform: translateX(-50%);
+    }
+}
+
 /* ===========================
    Section Styles
    =========================== */
 .section {
     padding: var(--space-3xl) 0;
-    border-top: 1px solid var(--colour-border);
-}
-
-.section:first-of-type {
-    border-top: none;
 }
 
 .section-title {
@@ -294,79 +345,63 @@ ul {
 }
 
 /* ===========================
-   Experience - Timeline
+   Experience - Thematic Pillars
    =========================== */
-.timeline {
-    position: relative;
-    padding-left: var(--space-xl);
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 8px;
-    bottom: 8px;
-    width: 2px;
-    background-color: var(--colour-border);
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: var(--space-xl);
-}
-
-.timeline-item:last-child {
-    margin-bottom: 0;
-}
-
-.timeline-marker {
-    position: absolute;
-    left: calc(-1 * var(--space-xl) - 4px);
-    top: 8px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--colour-accent);
-    border: 2px solid var(--colour-bg-primary);
-}
-
-.timeline-content {
-    padding-bottom: var(--space-md);
-}
-
-.timeline-header {
+.experience-pillars {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: var(--space-sm);
-    margin-bottom: var(--space-xs);
+    flex-direction: column;
+    gap: var(--space-2xl);
 }
 
-.role {
+.experience-card {
+    /* No background or border - clean typography focus */
+}
+
+.pillar-title {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
     color: var(--colour-text-primary);
+    margin-bottom: var(--space-md);
 }
 
-.period {
-    font-size: var(--font-size-sm);
-    font-family: var(--font-family-mono);
-    color: var(--colour-text-tertiary);
-}
-
-.company {
-    font-size: var(--font-size-base);
-    color: var(--colour-accent-dim);
-    margin-bottom: var(--space-sm);
-    font-weight: var(--font-weight-medium);
-}
-
-.description {
+.pillar-description {
     font-size: var(--font-size-base);
     color: var(--colour-text-secondary);
     line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-lg);
+}
+
+.pillar-roles {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.pillar-roles li {
+    font-size: var(--font-size-base);
+    color: var(--colour-text-secondary);
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.pillar-roles li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--colour-accent);
+}
+
+.pillar-roles strong {
+    color: var(--colour-text-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+.pillar-separator {
+    border: none;
+    height: 1px;
+    background-color: var(--colour-border);
+    margin: 0;
 }
 
 /* ===========================
@@ -554,6 +589,14 @@ ul {
     .hero-contact .separator {
         display: none;
     }
+
+    .hero-content {
+        margin-bottom: var(--space-3xl);
+    }
+
+    .scroll-down {
+        bottom: var(--space-md);
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -572,14 +615,6 @@ ul {
 
     .container {
         padding: var(--space-3xl) var(--space-xl);
-    }
-
-    .timeline {
-        padding-left: var(--space-2xl);
-    }
-
-    .timeline-marker {
-        left: calc(-1 * var(--space-2xl) - 4px);
     }
 }
 

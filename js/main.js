@@ -11,6 +11,7 @@
      */
     function init() {
         setupSmoothScroll();
+        setupScrollDownButton();
         setupIntersectionObserver();
         logConsoleMessage();
     }
@@ -51,6 +52,35 @@
                     target.focus();
                 }
             });
+        });
+    }
+
+    /**
+     * Scroll down button functionality
+     * Scrolls to the first section after hero
+     */
+    function setupScrollDownButton() {
+        const scrollDownBtn = document.querySelector('.scroll-down');
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!scrollDownBtn) return;
+
+        scrollDownBtn.addEventListener('click', function() {
+            // Find the first section after the hero
+            const firstSection = document.querySelector('.section');
+
+            if (firstSection) {
+                if (prefersReducedMotion) {
+                    // Instant scroll for reduced motion preference
+                    firstSection.scrollIntoView();
+                } else {
+                    // Smooth scroll
+                    firstSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
         });
     }
 

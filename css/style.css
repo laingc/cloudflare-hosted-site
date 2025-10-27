@@ -21,8 +21,10 @@
     --colour-text-primary: #e5e5e5;
     --colour-text-secondary: #a0a0a0;
     --colour-text-tertiary: #707070;
-    --colour-accent: #00d9ff;
-    --colour-accent-dim: #008fa8;
+    /* --colour-accent: #00d9ff; */
+    /* --colour-accent-dim: #008fa8; */
+    --colour-accent: #ff7700;
+    --colour-accent-dim: #a54d00;
     --colour-border: #2a2a2a;
     --colour-border-focus: #3a3a3a;
 

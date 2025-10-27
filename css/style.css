@@ -224,6 +224,31 @@ ul {
     margin: 0 auto;
 }
 
+.hero-contact {
+    margin-top: var(--space-lg);
+    font-size: var(--font-size-sm);
+    text-align: right;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-contact a {
+    color: var(--colour-text-tertiary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.hero-contact a:hover {
+    color: var(--colour-accent);
+}
+
+.hero-contact .separator {
+    color: var(--colour-text-tertiary);
+    margin: 0 var(--space-xs);
+    opacity: 0.5;
+}
+
 /* ===========================
    Section Styles
    =========================== */
@@ -516,6 +541,20 @@ ul {
 /* ===========================
    Responsive Design - Mobile First
    =========================== */
+
+/* Mobile: Stack contact links on very small screens */
+@media (max-width: 575px) {
+    .hero-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--space-xs);
+    }
+
+    .hero-contact .separator {
+        display: none;
+    }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
